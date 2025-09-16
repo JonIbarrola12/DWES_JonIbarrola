@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(233, 232, 232);
+}
+h1{
+    text-align: center;
+    margin-top: 2%;
+}
+.formulario{
+    display:block;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color: grey;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+.cursos{
+    margin-left: 5%;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+label{
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.enviar{
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* margin-top: 5px;
+    margin-left: 20%; */
+}
+.enviar:hover{
+    background-color: rgb(188, 188, 188);
+    text-align: center;
+}
+.botonEnviar{
+    margin-top: 4%;
+    margin-left:40%
+}
+.itemForm{
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+.textInput{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    padding-right: 5px;
+}
