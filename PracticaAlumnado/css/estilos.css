@@ -57,3 +57,61 @@ label{
     font-size: 12px;
     padding-right: 5px;
 }
+.tablaAlumnos{
+    width: 90%;
+    margin-left: 5%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.tdAlumnos, .thAlumnos {
+    padding: 12px 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+.thAlumnos{
+    background-color: gray;
+}
+.tdAlumnos{
+    background-color: rgb(233, 232, 232);
+}
+.botonVolver {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none; 
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botonVolver:hover {
+  background-color: black;
+  color: white;
+}
+
+.botonVolver:active {
+  background-color: rgb(94, 94, 94);
+}
+.respuesta{
+    display:block;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    background-color: grey;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+}
+.mensaje{
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
