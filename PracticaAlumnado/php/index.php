@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Pagina Alumnos</title>
-        <link rel="stylesheet" href="/PracticaAlumnado/css/estilos.css">
+        <link rel="stylesheet" href="../css/estilos.css">
     </head>
     <body>
         <div class="respuesta">
