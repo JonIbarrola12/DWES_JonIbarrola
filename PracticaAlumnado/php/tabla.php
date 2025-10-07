@@ -30,7 +30,9 @@
             echo "</table>";
             echo "</div>";
         }else{
+            echo "<div class='respuesta'>";
             echo "<p class='mensaje'>No hay Alumnos</p>";
+            echo "</div>";
         }
         mysqli_close($conexion)
     ?>

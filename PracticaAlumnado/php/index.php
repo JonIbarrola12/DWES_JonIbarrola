@@ -37,7 +37,7 @@
             mysqli_close($conexion);
         ?>
         <br>
-        <a href="/PracticaAlumnado/formulario.php" class="botonVolver">Volver</a>
+        <a href="/PracticaAlumnado/formulario.html" class="botonVolver">Volver</a>
         </div>
     </body>
 
