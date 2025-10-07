@@ -33,20 +33,23 @@ label{
     font-size: 20px;
 }
 .enviar{
+    display: inline-block;
     background-color: white;
     color: black;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* margin-top: 5px;
-    margin-left: 20%; */
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.enviar:hover{
-    background-color: rgb(188, 188, 188);
-    text-align: center;
+.enviar:hover {
+  background-color: black;
+  color: white;
 }
-.botonEnviar{
-    margin-top: 4%;
-    margin-left:40%
+
+.enviar:active {
+  background-color: rgb(94, 94, 94);
 }
 .itemForm{
     margin-bottom: 5px;
@@ -114,4 +117,28 @@ label{
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
 
+}
+.mostrarTabla{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.mostrarTabla:hover {
+  background-color: black;
+  color: white;
+}
+
+.mostrarTabla:active {
+  background-color: rgb(94, 94, 94);
+}
+.divBotones{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
