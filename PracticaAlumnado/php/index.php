@@ -11,15 +11,7 @@
             $nombre = $_POST['nombre'];
             $apellidos = $_POST['apellidos'];
             $fecha = $_POST['fecha'];
-            if ($_POST['curso']=="1"){
-                $curso = "1º ESO";
-            }elseif ($_POST['curso']=="2"){
-                $curso = "2º ESO";
-            }elseif ($_POST['curso']=="3"){
-                $curso = "3º ESO";
-            }else {
-                $curso = "4º ESO";
-            }
+            $curso = $_POST['curso'];
             $email = $_POST['email'];
             $contraseña = $_POST['contraseña'];
 
