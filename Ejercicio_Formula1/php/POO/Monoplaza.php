@@ -50,7 +50,6 @@
 
         public abstract function otorgarPuntos();
         public abstract function posicionValida();
-        public abstract function subirCategoria();
 
     }
     ?>

@@ -61,8 +61,5 @@
             }
             return false;
         }
-        public function subirCategoria(){
-            echo "Ya estas en la maxima categoria";
-        }
     }
     ?>
