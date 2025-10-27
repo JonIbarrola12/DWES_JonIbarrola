@@ -15,8 +15,8 @@
             return $this->nombreAcademia;
         }
 
-        public function obtenerPuntuacion(int $posicion,bool $vueltaRapida){
-            if (posicionValida($posicion)){
+        public function otorgarPuntos(int $posicion,bool $vueltaRapida){
+            if ($this->posicionValida($posicion)){
                 switch($posicion){
                     case 1 : 
                         $this->puntosPiloto += 10;
@@ -51,13 +51,13 @@
             }
         }
         public function posicionValida(int $posicion){
-            if($posicion > 0 && posicion < 31){
+            if($posicion > 0 && $posicion < 31){
                 return true;
             }
             return false;
         }
         public function subirCategoria(bool $minimoPuntosSuperlicencia){
-            $f2 = new F2($pNombrePiloto, $pNacionalidadPiloto, $pNumeroMonoplaza, $pEscuderiaPiloto, 0, $minimoPuntosSuperlicencia );
+            $f2 = new F2($this->nombrePiloto, $this->nacionalidadPiloto, $this->numeroMonoplaza, $this->escuderiaPiloto, 0, $minimoPuntosSuperlicencia );
             return $f2;
         }
     }

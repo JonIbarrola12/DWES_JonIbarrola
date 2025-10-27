@@ -14,8 +14,8 @@
             return $this->patrocinadorPrincipal;
         }
 
-        public function obtenerPuntuacion(int $posicion,bool $vueltaRapida){
-            if (posicionValida($posicion)){
+        public function otorgarPuntos(int $posicion,bool $vueltaRapida){
+            if ($this->posicionValida($posicion)){
                 switch($posicion){
                     case 1 : 
                         $this->puntosPiloto += 25;
@@ -56,7 +56,7 @@
             }
         }
         public function posicionValida(int $posicion){
-            if($posicion > 0 && posicion < 23){
+            if($posicion > 0 && $posicion < 23){
                 return true;
             }
             return false;

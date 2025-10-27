@@ -1,10 +1,10 @@
 <?php
     abstract class Monoplaza{
-        private string $nombrePiloto;
-        private string $nacionalidadPiloto;
-        private int $numeroMonoplaza;
-        private string $escuderiaPiloto;
-        private int $puntosPiloto;
+        protected string $nombrePiloto;
+        protected string $nacionalidadPiloto;
+        protected int $numeroMonoplaza;
+        protected string $escuderiaPiloto;
+        protected int $puntosPiloto;
 
         public function __construct(string $pNombrePiloto,string $pNacionalidadPiloto, int $pNumeroMonoplaza, string $pEscuderiaPiloto, int $pPuntosPiloto) {
             $this->nombrePiloto = $pNombrePiloto;
@@ -48,8 +48,8 @@
             return $this->puntosPiloto;
         }
 
-        public abstract function otorgarPuntos();
-        public abstract function posicionValida();
+        public abstract function otorgarPuntos(int $posicion,bool $vuelta_rapida);
+        public abstract function posicionValida(int $posicion);
 
     }
     ?>

@@ -15,8 +15,8 @@
             return $this->potenciaMaximaMotor;
         }
 
-        public function obtenerPuntuacion(int $posicion,bool $vueltaRapida){
-            if (posicionValida($posicion)){
+        public function otorgarPuntos(int $posicion,bool $vueltaRapida){
+            if ($this->posicionValida($posicion)){
                 switch($posicion){
                     case 1:
                         $this->puntosPiloto += 18;
@@ -54,13 +54,13 @@
             }
         }
         public function posicionValida(int $posicion){
-            if($posicion > 0 && posicion < 19){
+            if($posicion > 0 && $posicion < 19){
                 return true;
             }
             return false;
         }
         public function subirCategoria(string $pPaisCategoria){
-            $f4 = new F4($pNombrePiloto, $pNacionalidadPiloto, $pNumeroMonoplaza, $pEscuderiaPiloto, 0, $pPaisCategoria);
+            $f4 = new F4($this->nombrePiloto, $this->nacionalidadPiloto, $this->numeroMonoplaza, $this->escuderiaPiloto, 0, $pPaisCategoria);
             return $f4;
         }
     }
